@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Traffic Anomaly Detection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Real-Time Supply chain Anomaly Detection</h1>
+    <button id="startButton">Start Detection</button>
+    
+    <div id="trafficData">
+      <p><strong>Latency:</strong> <span id="latency">0</span> ms</p>
+      <p><strong>Size:</strong> <span id="size">0</span> bytes</p>
+      <p><strong>Status:</strong> <span id="status">Normal</span></p>
+    </div>
+
+    <div id="anomaliesLog">
+      <h2>Anomaly Logs</h2>
+      <table id="logTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Latency</th>
+            <th>Size</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="plotContainer">
+      <canvas id="trafficPlot" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
